@@ -1,0 +1,57 @@
+/* src/styles/alerts.module.css */
+
+.alertsContainer {
+    padding: 40px 20px;
+  }
+  
+  .alertsContainer h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .alertList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .alertItem {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .alertDetails h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .alertDetails p {
+    font-size: 1rem;
+    color: var(--foreground-color);
+  }
+  
+  .viewButton {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .viewButton:hover {
+    background-color: var(--hover-bg-color);
+    color: white;
+  }
+  

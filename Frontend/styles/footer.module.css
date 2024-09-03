@@ -1,0 +1,132 @@
+/* src/styles/footer.module.css */
+
+.footer {
+    background-color: var(--primary-color); /* Matching Navbar color */
+    color: white;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+    box-shadow: var(--box-shadow);
+    margin-top: auto;
+  }
+  
+  .footerContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 20px; /* Space between columns */
+    max-width: var(--max-width);
+    margin: 0 auto 30px;
+    align-items: start; /* Align items at the start of the column */
+  }
+  
+  .about, .quickLinks, .socialMedia {
+    padding: 0 20px;
+    align-content: flex-start;
+  }
+  
+  .about h3, .quickLinks h3, .socialMedia h3, .newsletterSignup h3 {
+    color: var(--secondary-color); /* Light Pink for headings */
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  
+  .about p {
+    line-height: 1.6;
+    align-items: flex-start;
+  }
+  
+  .quickLinks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .quickLinks ul li {
+    margin-bottom: 12px;
+  }
+  
+  .quickLinks ul li a {
+    color: white;
+    font-size: 1rem;
+    transition: color var(--transition-speed);
+  }
+  
+  .quickLinks ul li a:hover {
+    color: var(--secondary-color); /* Light Pink on hover */
+  }
+  
+  .socialMedia {
+    text-align: left; /* Align text to the left */
+  }
+  
+  .socialMediaIcons {
+    display: flex;
+    justify-content: flex-start; /* Align icons to the left */
+    gap: 20px;
+    margin-top: 15px;
+  }
+  
+  .socialMediaIcons a {
+    color: white;
+    font-size: 1.5rem; /* Increased font size for better visibility */
+    transition: color var(--transition-speed);
+  }
+  
+  .socialMediaIcons a:hover {
+    color: var(--secondary-color); /* Light Pink on hover */
+  }
+  
+  .newsletterSignup {
+    text-align: center;
+    margin: 0 auto 20px;
+    max-width: 400px;
+  }
+  
+  .newsletterSignup input {
+    padding: 12px;
+    border: none;
+    border-radius: var(--border-radius);
+    width: 65%;
+    margin-right: 10px;
+    box-shadow: var(--box-shadow);
+    font-size: 1rem;
+  }
+  
+  .newsletterSignup button {
+    padding: 12px 20px;
+    background-color: var(--secondary-color); /* Light Pink */
+    color: var(--primary-color); /* Purple text */
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .newsletterSignup button:hover {
+    background-color: var(--hover-bg-color); /* Darker Purple */
+    color: white;
+  }
+  
+  .footerBottom {
+    text-align: center;
+    color: #ccc;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /* Increased transparency for subtlety */
+  }
+  
+  @media (max-width: 768px) {
+    .footerContent {
+      grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+      text-align: center;
+    }
+  
+    .about, .quickLinks, .socialMedia {
+      padding: 0;
+    }
+  
+    .socialMediaIcons {
+      justify-content: center; /* Centers icons on smaller screens */
+      margin-top: 15px;
+    }
+  }
+  

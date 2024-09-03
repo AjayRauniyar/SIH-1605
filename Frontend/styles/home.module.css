@@ -1,0 +1,102 @@
+/* src/styles/home.module.css */
+
+.homeContainer {
+  padding: 40px 20px;
+}
+
+.heroSection {
+  text-align: center;
+  background-image: url('../public/womensafety.png'); /* Replace with the actual path to your background image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
+  border-radius: var(--border-radius);
+  margin-bottom: 40px;
+  box-shadow: var(--box-shadow);
+}
+
+.heroSection h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+.heroSection p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+.ctaButton {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  padding: 15px 30px;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+.ctaButton:hover {
+  background-color: var(--hover-bg-color);
+  color: white;
+}
+
+.featuresSection {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.featuresSection h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.featureCard {
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+
+.featureCard h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.featureCard p {
+  font-size: 1rem;
+  color: var(--foreground-color);
+}
+
+.aboutSection {
+  text-align: center;
+  background-color: var(--background-color);
+  padding: 40px 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.aboutSection h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.aboutSection p {
+  font-size: 1.2rem;
+  color: var(--foreground-color);
+  line-height: 1.6;
+}

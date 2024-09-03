@@ -1,0 +1,122 @@
+/* src/styles/video-analysis.module.css */
+
+.videoAnalysisContainer {
+  padding: 40px 20px;
+  padding-top: 60px; /* Account for Navbar height */
+  text-align: center;
+  position: relative;
+}
+
+.videoAnalysisContainer h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.statusBox {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between status text and button */
+}
+
+.statusBox p {
+  font-size: 1.2rem;
+  color: var(--foreground-color);
+}
+
+.statusBox .active {
+  background-color: green; /* Background green when active */
+  color: white; /* Text color white */
+  padding: 5px 10px;
+  border-radius: var(--border-radius);
+}
+
+.statusBox .inactive {
+  background-color: red; /* Background red when inactive */
+  color: white; /* Text color white */
+  padding: 5px 10px;
+  border-radius: var(--border-radius);
+}
+
+.toggleButton {
+  padding: 8px 16px;
+  background-color: var(--primary-color); /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.videoFeed {
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  width: 80%; /* Increase the width of the video feed */
+  max-width: 800px; /* Set a maximum width to keep the video manageable */
+  height: auto; /* Automatically adjust height to maintain aspect ratio */
+  margin: 0 auto 30px; /* Center the video and add space below it */
+  position: relative; /* Allows other elements to position around it */
+}
+
+.videoElement {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+.detectionStats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow wrapping if the screen is narrow */
+}
+
+.stat {
+  background-color: var(--background-color);
+  padding: 15px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  flex: 1;
+  min-width: 200px; /* Ensure the stats have a minimum width */
+}
+
+.stat p {
+  font-size: 1.2rem;
+  color: var(--foreground-color);
+  margin: 0;
+}
+
+.stat span {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.alertButton {
+  background-color: var(--primary-color); /* Match button color with primary */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .detectionStats {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .videoFeed {
+    width: 100%; /* Make the video feed take the full width on smaller screens */
+    max-width: none; /* Remove the max-width restriction */
+  }
+}

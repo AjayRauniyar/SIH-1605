@@ -1,0 +1,70 @@
+/* src/styles/globals.css */
+
+:root {
+  --max-width: 1200px;
+  --border-radius: 12px;
+  --font-sans: 'Roboto', sans-serif;
+  --primary-color: #6A0DAD; /* Purple */
+  --secondary-color: #FFB6C1; /* Light Pink */
+  --accent-color: #530A8A; /* Darker Purple */
+  --background-color: #FFFFFF; /* White background */
+  --foreground-color: #2C2C2C;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background-color); /* Ensuring the background is white */
+  color: var(--foreground-color);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+  flex: 1;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color); /* Purple */
+  font-weight: 700;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+a:hover {
+  color: var(--secondary-color); /* Light Pink */
+  text-decoration: underline;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color var(--transition-speed);
+  box-shadow: var(--box-shadow);
+}
+
+button:hover {
+  background-color: var(--accent-color);
+}

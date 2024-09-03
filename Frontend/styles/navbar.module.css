@@ -1,0 +1,62 @@
+/* src/styles/navbar.module.css */
+
+.navbar {
+    background-color: var(--primary-color);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .navList-container {
+    display: flex;
+    justify-content: center; /* Centers the nav items */
+    flex-grow: 1; /* Allows the navList to grow and take up available space */
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+  }
+  
+  .navList li a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color var(--transition-speed);
+    text-decoration: none; /* Remove underline */
+    padding: 5px 0; /* Added padding to increase clickable area without adding background */
+  }
+  
+  .navList li a:hover,
+  .navList li a:focus {
+    color: var(--secondary-color); /* Light Pink on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .navList {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
