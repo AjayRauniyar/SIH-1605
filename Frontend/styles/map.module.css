@@ -1,8 +1,5 @@
-/* src/styles/map.module.css */
-
 .mapPageContainer {
-  padding: 40px 20px;
-  padding-top: 60px;
+  padding: 60px 20px;
   text-align: center;
 }
 
@@ -20,7 +17,7 @@
 }
 
 .mapContainer {
-  width: 70%;
+  flex: 1;
   height: 500px;
   border-radius: var(--border-radius);
   overflow: hidden;
@@ -28,7 +25,7 @@
 }
 
 .detailsContainer {
-  width: 25%;
+  flex-basis: 300px;
   background-color: var(--background-color);
   padding: 20px;
   border-radius: var(--border-radius);
@@ -46,9 +43,6 @@
 .detailsContainer p {
   font-size: 1.2rem;
 }
-/* src/styles/map.module.css */
-
-/* Existing styles */
 
 .emergencyContacts {
   margin-top: 20px;
@@ -67,6 +61,7 @@
 .emergencyContacts ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .emergencyContacts ul li {
@@ -74,12 +69,11 @@
   margin-bottom: 10px;
 }
 
-
 .safetyTips {
   margin-top: 40px;
-  text-align: left;
   max-width: 800px;
   margin: 40px auto 0;
+  text-align: left;
 }
 
 .safetyTips h3 {
@@ -106,7 +100,6 @@
   }
 
   .mapContainer {
-    width: 100%;
     height: 400px;
   }
 
